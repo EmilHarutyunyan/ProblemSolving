@@ -7,10 +7,10 @@
 
 
 function getBinary(num) {
-	const binaryInfo = {
-  	binary:[],
+  const binaryInfo = {
+    binary: [],
     0: 0,
-    1:0,
+    1: 0,
   };
   let i = 0;
   while (num > 0) {
@@ -19,26 +19,28 @@ function getBinary(num) {
     num = Math.floor(num / 2);
     i++;
   }
-  console.log(binaryInfo)
-  return binaryInfo
+  console.log(binaryInfo);
+  return binaryInfo;
 }
 //1.
 function bitLength(num) {
-  const binaryInfo = getBinary(num)
+  const binaryInfo = getBinary(num);
   return binaryInfo.binary.length;
 }
 //2.
 function bitEvenOdd(num) {
-  const binaryInfo = getBinary(num)
-	return binaryInfo['1'].length % 2 ? 'odd' :  'even'
+  const binaryInfo = getBinary(num);
+  return binaryInfo["1"].length % 2 ? "odd" : "even";
 }
 
 //4.
 function reversBinary(num) {
-  const binaryInfo = getBinary(num)
-	return ~(num << 32 - binaryInfo.binary.length) >> 32 - binaryInfo.binary.length
+  const binaryInfo = getBinary(num);
+  return (
+    ~(num << (32 - binaryInfo.binary.length)) >> (32 - binaryInfo.binary.length)
+  );
 }
 
-console.log(bitLength(12))
-console.log(bitEvenOdd(123))
-console.log(reversBinary(240))
+console.log(bitLength(12));
+console.log(bitEvenOdd(123));
+console.log(reversBinary(240));

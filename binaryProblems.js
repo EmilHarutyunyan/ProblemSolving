@@ -24,7 +24,7 @@ function getBinary(num) {
 //1.
 function bitLength(num) {
   const binaryInfo = getBinary(num);
-  return binaryInfo.binary.length;
+  return binaryInfo['1'];
 }
 //2.
 function bitEvenOdd(num) {

@@ -40,4 +40,4 @@ let singleNumber = function (nums) {
   }
   return oneNum;
 };
-console.log(singleNumber([4, 1, 2, 1, 2]));
+singleNumber([4, 1, 2, 1, 2]);

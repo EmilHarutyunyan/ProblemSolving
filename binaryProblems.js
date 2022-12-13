@@ -19,7 +19,6 @@ function getBinary(num) {
     num = Math.floor(num / 2);
     i++;
   }
-  console.log(binaryInfo);
   return binaryInfo;
 }
 //1.

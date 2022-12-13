@@ -33,4 +33,4 @@ let firstUniqChar = function(s) {
   }
   return oneIndx;
 };
-console.log(firstUniqChar("loveleetcode"));
+firstUniqChar("loveleetcode");

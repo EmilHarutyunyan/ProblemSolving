@@ -19,8 +19,7 @@ Explanation: There is a cycle in the linked list, where the tail connects to the
 
 */
 
-var hasCycle = head => {
-
+function hasCycle(head) {
   let cpHead = head
   let tmpHead = head;
 

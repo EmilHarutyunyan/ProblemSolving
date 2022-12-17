@@ -24,7 +24,7 @@ var hasCycle = head => {
   let cpHead = head
   let tmpHead = head;
 
-  while (cpHead) {
+  while (cpHead && tmpHead) {
     cpHead = cpHead.next?.next;
     tmpHead = tmpHead.next;
 

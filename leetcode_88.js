@@ -28,7 +28,7 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 
 */
 function merge(nums1, m, nums2, n) {
-  // Space Complexity O(n)
+  // Space Complexity O(1)
   let newArr = [];
   let i = 0;
   let j = 0;
@@ -72,4 +72,4 @@ function merge(nums1, m, nums2, n) {
   return nums1;
 }
 // Time Complexity O(n^2)
-// Space Complexity O(n)
+// Space Complexity O(1)

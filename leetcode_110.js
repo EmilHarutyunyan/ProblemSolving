@@ -14,6 +14,11 @@ Example 3:
 Input: root = []
 Output: true
 
+function TreeNode(val, left, right) {
+      this.val = (val===undefined ? 0 : val)
+      this.left = (left===undefined ? null : left)
+      this.right = (right===undefined ? null : right)
+}
 */
 function isBalanced(root) {
   let result = true;
@@ -27,7 +32,7 @@ function isBalanced(root) {
     let right = recBin(root.right);
 
     if (Math.abs(left - right) > 1) {
-      res = false;
+      result = false;
     }
     if (left > right) {
       return left + 1;
